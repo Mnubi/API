@@ -22,5 +22,6 @@
 
 .details{
     color: rgb(12, 6, 102);
-    font-size: large;
+    font-size: 18px;
+    font-weight: 600;
 }
