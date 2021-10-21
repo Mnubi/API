@@ -17,6 +17,7 @@
 .avatar {
     width: 250px;
     height: 260px;
+    border-style: double;
 }
 
 .details{
