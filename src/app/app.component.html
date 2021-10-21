@@ -1,13 +1,13 @@
 <div [ngClass]= "'body'">
     <h1><em>Get user API in Angular</em></h1>
-    <P> Github APIs( or Github ReST APIs) are the APIs that you can use to interact with GitHub. They allow you to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), you can call the API.
+    <P> Github APIs (or Github ReST APIs) are the APIs that you can use to interact with GitHub. They allow you to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), you can call the API.
       For other actions, you need to provide an authenticated token.</P>
 
 
   <form action="">
     <input type="text" name="search" id="search" [(ngModel)]="searchText" (keyup)="getPublicRepositories()">
   </form>
-  
+
   <br>
 
   <div>
