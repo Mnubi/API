@@ -2,27 +2,35 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.10. by Rodger Philip Kamau
 
-## Development server
+## Author
 
-The app will run automatically on every browser of all devices. Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Rodger Kamau](https://github.com/Mnubi/API.git)
+#### {}, {November, 12 2021}
 
-## Code scaffolding
+## Description
+This angular web application will allow users to search github users and also display their image, avatar. It will also provide some of their repositories that they have saved them on github.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Installation / Setup instruction
 
-## Build
+#### The application requires the following installations to operate 
+* Angular cli and their extension to run
+* copy this link and run it from any browser https://mnubi.github.io/API/
+* The search is automated
+* Type the user name of you wish to search 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-There are  no known bugs in this app
+## Technologies Used
 
-## Running unit tests
+* Angular
 
-Run `ng test` to execute the unit tests via [Karma](https://mnubi.github.io/API/).
+## Known Bugs
+* There are no known bugs currently, the application should run smoothly
+* If you find a bug (the website couldn't handle the query and or gave undesired results), kindly open an issue here by including your search query and the expected result.
+* If you'd like to request a new function, feel free to do so by opening an issue here. Please include sample queries and their corresponding results.
 
-## Running end-to-end tests
+## Contact Information 
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+If you need any assistance or any upgrade communication channel is open, please email me at [rodger.kamau@student.moringaschool.com]
 
-## Further help
-
-To get more help on this app or concern that needs to be raised you can contact me through rodger.kamau@student.moringaschool.com or you ca visit the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+* *MIT License:*
+* Copyright (c) 2020 **Rodger Kamau**
