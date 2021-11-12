@@ -19,6 +19,13 @@ getUsers() {
 
 }
 
+getRepos() {
+
+
+  return this.httpClient.get<any>(`${this.url}${this.searchText}/repos??access_token=+${this.apiToken}`).toPromise() 
+
+}
+
 searchUser(name:string) {
   this.searchText=name
 }

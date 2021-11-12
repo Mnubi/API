@@ -1,18 +1,37 @@
-.body {
-    color: black;
+.container {
+    background-color: wheat;
     padding: 50px;
+
 }
 
-.body h1{
-    text-align: center;
-    color: black;
+#head{
+    color: darkorchid;
+}
+#form{
+    padding-top: 50px;
 }
 
-.body p{
+.row{
+    padding-top: 30px;
+    border-style: double;
+}
+
+#title{
     text-align: center;
-    width: 55%;
-    justify-content: center;
-    margin-left: 350px;
+    color: rgb(7, 10, 214);
+}
+
+.repo{
+    border-style: double;
+}
+
+hr{
+    color: rgb(27, 24, 218);
+    border: 10px;
+}
+#desc{
+    text-align: center;
+    justify-content: center;    
 }
 
 .avatar {
@@ -25,4 +44,5 @@
     color: rgb(12, 7, 102);
     font-size: 18px;
     font-weight: 600;
+    padding-top: 15px;
 }

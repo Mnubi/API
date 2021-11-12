@@ -10,6 +10,7 @@ export class AppComponent implements OnInit{
   title = 'API'; 
   user:any
   searchText:any="mnubi"
+  repos:any
 
   constructor(private usersService: UsersService){}
   ngOnInit(): void {
@@ -23,6 +24,11 @@ export class AppComponent implements OnInit{
       console.log(data);
 
       this.user=data
+    })
+    this.usersService.getRepos().then((repo) => {
+      console.log(repo);
+
+      this.repos=repo
     })
   }
 }
