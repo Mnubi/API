@@ -1,24 +1,42 @@
-<div [ngClass]= "'body'">
-    <h1><em>Get user API in Angular</em></h1>
-    <P> Github APIs (or Github ReST APIs) are the APIs that you can use to interact with GitHub. They allow you to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), you can call the API.
-      For other actions, you need to provide an authenticated token.</P>
+<div class="container">
+  <div [ngClass]= "'body'">
+
+    <h1 id="head">Github User Search</h1>
+    <P><em> Github APIs (or Github ReST APIs) are the APIs that you can use to interact with GitHub. They allow you to create and manage repositories, branches, issues, pull requests, and many more. For fetching publicly available information (like public repositories, user profiles, etc.), you can call the API.
+      For other actions, you need to provide an authenticated token.</em></P>
 
 
-  <form action="">
+  <form id="form">
+    <label for="">Search user:</label>
     <input type="text" name="search" id="search" [(ngModel)]="searchText" (keyup)="getPublicRepositories()">
   </form>
 
   <br>
 
-  <div>
+</div>
+
+<div class="row border-primary">
+
+  <div class="col-md-4">
     <img src="{{user.avatar_url}}" alt="" [ngClass]="'avatar'">
     
     <pre [ngClass]="'details'">Github Name: {{user.login}}</pre>
+    <pre [ngClass]="'details'">Full Name: {{user.name}}</pre>
     <pre [ngClass]="'details'">Repositories: {{user.public_repos}}</pre>
     <Pre [ngClass]="'details'">Followers: {{user.followers}}</Pre>
     <pre [ngClass]="'details'">Following: {{user.following}}</pre>
  
   </div>
 
-</div>
+  <div class="repo col-md-8" >
+    <div *ngFor="let repo of repos">
+      <h2 id="title">{{repo.name}}</h2>
+      <p id="desc">{{repo.description}}</p>
+      <p id="desc">{{repo.url}}</p>
+      <hr>
+    </div>
+  </div>
+  
 
+</div>
+</div>
